@@ -1,0 +1,300 @@
+/* ---stylesheet--- */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,300;1,400;1,500&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+a.my-btn{
+    background-color: #e02c6d ;
+    border-color: #e02c6d;
+    padding:8px 30px;
+    font-size: 16px;
+    position: relative;
+    text-decoration: none;
+    color: white;
+    z-index: 2;
+    display: inline-block;
+    line-height: 24px;
+    font-weight: 500;
+}
+a.my-btn::after{
+    content: "";
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #111 ;
+    border-color: #111;
+    transition: .5s;
+    z-index: -1;
+}
+.my-btn:hover::after{
+   width: 100%;  
+}
+a.my-btn:hover{
+    background: #111 ;
+    border-color: #111;
+    transition: .5s;  
+}
+
+/* *****----****header-part-design****----***** */
+.top-bar{
+    background-color: #2d25a0;
+}
+.header-top{
+    width:1163px;
+    height: 44px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+    margin-left: 125px;
+}
+.menu-bar{
+    width: 587px;
+    height: 24px;
+    margin-left: 47px;
+}
+.nav-bar{
+    
+}
+.nav-bar ul{
+    list-style-type: none;
+    display: flex;
+    justify-content:space-between;
+}
+.nav-bar ul li{
+    font-style: normal;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    margin-top: 40px;
+    
+}
+.nav-bar ul li a{
+    text-decoration: none;
+    color:#ffff;
+}
+.rt-login-bar{
+    background-color: #e02c6d;
+    text-align: center;
+    margin-top: 76px;
+}
+.rt-login-bar .login-icon{
+    background-color: #e02c6d;
+    color: white;
+    text-decoration: none;
+    padding: 10px 24px;
+  
+}
+.rt-login-bar .login-icon span{
+   /* margin-right: 5px; */
+}
+
+/* *****main-section-design-start***** */
+.main-section{
+    background-color: #2d25a0; 
+}
+.banner-section{
+    background: url(./images/banner.png) no-repeat right;
+    background-size:556px 438px ;
+}
+.banner-section:hover{
+    transform: scale(1.1,1.1) ;
+    transition: .2s;
+}
+/* -----banner-content-design--- */
+.fixed-width{
+font-style: normal;
+font-weight: bold;
+font-size: 64px;
+line-height: 80px;
+width: 73%;
+height:80vh;
+display: flex;
+align-items: center;
+color: white;
+margin: auto;
+}
+.header{
+    margin: 0px;
+}
+
+.button-div .login-icon{
+    background-color: #e02c6d;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+}
+.fa{
+    margin-left: 7px;
+}
+/* ------player-blog-design-start---- */
+.container{
+    background-color:white ;
+}
+
+.top-blogs{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr 1fr 1fr);
+    grid-column-gap:30px;
+    grid-row-gap:27px;
+    margin-left: 220px;
+    width:1050px;
+}
+.players-blog{
+    padding: 14px;
+    width: 330px;
+    height: 456px;
+    border:1px solid #fff;
+    box-sizing:border-box;
+    box-shadow:5px 9px 13px rgb(0 0 0 / 17%); 
+    margin-top: 70px;
+    margin-left: 15px;
+}
+.img-thumbnail{
+    min-width: 100%;
+    display: inline-block;
+}
+.img-thumbnail img{
+    width: 300px;
+    height: 256px;
+}
+.content-info{
+    width: 300px;
+    height: 154px;
+    margin: 16px 0px;
+}
+.player-name{
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 40px;
+    margin-top: 16px;
+    color: #18191F;;
+}
+.about-player{
+    width: 300px;
+    font-size: 16px;
+    line-height: 26px;
+    color: #6C6C6C;
+    margin-top: 10px;
+    font-weight: normal;
+}
+.players-blog-info{
+    padding: 14px;
+    width: 330px;
+    height: 456px;
+    border:1px solid #fff;
+    box-sizing:border-box;
+    box-shadow:5px 9px 40px rgb(0 0 0 / 17%); 
+    margin-top: 27px;
+    margin-left: 15px;
+}
+/* ---player-blog-design-end--- */
+
+
+/* ----highlight-content-design-start---- */
+
+
+.headlight{
+    width: 469px;
+    height: 120px;
+    color:#0A0826;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 60px;
+}
+.about-player-highlight{
+    width: 404px;
+    height: 113px;
+    font-size: 16px;
+    line-height: 26px;
+    color: #6C6C6C;
+    margin-top: 10px;
+    font-weight: normal;  
+}
+.content-img-box{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr 1fr);
+    grid-column-gap:66px;
+    margin-left:250px;
+}
+.all-highlight-content{
+   width: 469px; 
+   height: 309px;
+   margin-top: 224px;
+}
+.image-frame{
+   width: 567px;
+   height: 427px;
+   margin-top: 165px;
+   transition:.4s 
+}
+.image-frame:hover{
+    transform: scale(1.1,1.1) ;
+    transition: .4s;
+}
+
+.image-frame img{
+    max-width: 100%;
+}
+/* ----highlight-content-design-end---- */
+/* ****football-box-with-social-icon-design-start**** --> */
+.football-box{
+    display:inline-block;
+    margin-left:573px;
+    width: 483.87px;
+    height: 110px;
+    margin-top: 158px;  
+}
+.football-box img{
+    max-width: 100%;
+}
+/* ****social-icon-design**** */
+.social-icon-div{
+    margin-left:717px;
+    margin-top:20px ;
+}
+.social-icon-div ul{
+    display: flex;
+    text-align: center;
+}
+.social-icon-div ul li{
+    list-style-type:none;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    line-height: 30px;
+    background-color:#969BAB;
+    margin-right: 14px;
+   
+}
+.social-icon-div ul li a{
+    display:inline-block;
+    text-align: center;
+}
+.fav-icon{
+    margin-left: 0px;
+}
+
+/* ***footer-part-design*** */
+.footer-part{
+    color: #000000;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    margin-top: 20px;
+    width: 483.87px;
+    height: 213px;
+    margin-left: 562px;
+}
